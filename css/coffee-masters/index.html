@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="http://localhost:3000/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="logo"
+      />
+      <h1>Coffee Masters</h1>
+    </header>
+    <main class="main">
+      <section class="items box">
+        <h2>Items</h2>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <p class="product">Cappucino</p>
+          <div class="description">
+            <p>Lite foam</p>
+          </div>
+          <p class="amount">$3.35</p>
+        </div>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <p class="product">Cappucino</p>
+          <div class="description">
+            <p>Lite milk</p>
+            <p>Double espresso</p>
+          </div>
+          <p class="amount">$3.85</p>
+        </div>
+        <div class="item">
+          <p class="quantity">1x</p>
+          <p class="product">Croissant</p>
+          <div class="description">
+            <p>Butter</p>
+          </div>
+          <p class="amount">$2.45</p>
+        </div>
+      </section>
+      <section class="name box">
+        <h2>Name</h2>
+        <div class="input-label">
+          <label for="name" class="label">Name for order</label>
+          <input
+            type="text"
+            id="name"
+            class="input"
+            placeholder="Ford Prefect"
+          />
+        </div>
+      </section>
+      <section class="payment box">
+        <h2>Payment</h2>
+        <div class="input-label">
+          <label for="card-number" class="label card">Card number</label>
+          <input
+            type="text"
+            id="card-number"
+            class="input card"
+            placeholder="1234 5678 9012 3456"
+          />
+        </div>
+        <div class="input-label">
+          <label for="ccv-number" class="label ccv">CCV number</label>
+          <input
+            type="text"
+            id="ccv-number"
+            class="input ccv"
+            placeholder="001"
+          />
+        </div>
+      </section>
+      <section class="order">
+        <table>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td>Subtotal:</td>
+              <td class="price">$9.65</td>
+            </tr>
+            <tr class="table-row">
+              <td>Tax:</td>
+              <td class="price">$0.82</td>
+            </tr>
+            <tr class="table-row total">
+              <td>Total:</td>
+              <td class="price">$10.47</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn">Place order</button>
+      </section>
+    </main>
+  </body>
+</html>
